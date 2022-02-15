@@ -115,7 +115,7 @@ var movieNight = function(movies, timeLimit) {
 // strings converted to uppercase letters.
 var upperCaseFruits = function(fruits) {
   var upperFruits = _.map(fruits, function(fruit) {
-    var word = "";
+    var word = '';
     word += fruit.toUpperCase();
     return word;
   });
@@ -128,12 +128,12 @@ var upperCaseFruits = function(fruits) {
 var glutenFree = function(desserts) {
   var hasGluten = _.map(desserts, function(dessert) {
     var newObj = {};
-    if (dessert["ingredients"].includes('flour') === false) {
-      newObj['name'] = dessert['name']
+    if (dessert['ingredients'].includes('flour') === false) {
+      newObj['name'] = dessert['name'];
       newObj['glutenFree'] = true;
       return newObj;
     }
-    return
+    return;
   }).filter(function(i) {
     return (!(i === undefined));
   });
